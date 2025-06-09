@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تجربة تفاعلية</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .top {
+      flex: 1;
+      background: black;
+    }
+    .top video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bottom {
+      flex: 1;
+    }
+    .bottom iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <video src="assets/976366615194146662.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="bottom">
+      <iframe src="https://t.co/LAYhiBWJlj" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
